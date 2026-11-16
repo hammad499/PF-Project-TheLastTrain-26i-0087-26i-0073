@@ -2,10 +2,156 @@
 #include "util.h"
 #include <fstream>
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
-const char* getEntityName(char entitySymbol){
+bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom,
+                      int& energy, int& time, int& score,
+                      char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount,
+                      bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft) {
+    playerFloor = -1;
+    playerRoom = -1;
+    energy = INITIAL_ENERGY;
+    time = INITIAL_TIME;
+    score = INITIAL_SCORE;
+    inventoryCount = 0;
+    emergencyTripsLeft = 0;
 
+    for (int i = 0; i < MAX_INVENTORY_CAPACITY; i++) {
+        inventory[i] = ENT_NONE;
+    }
+
+    for (int i = 0; i < NUM_OBJECTIVES; i++) {
+        objectives[i] = false;
+    }
+
+    if (filename == nullptr)
+        return false;
+
+    ifstream file(filename);
+    if (!file.is_open())
+        return false;
+
+    char line[MAX_LINE_LEN];
+
+    while (file.getline(line, MAX_LINE_LEN)) {
+        trimWhitespace(line);
+        if (line[0] == '\0') continue;
+
+        int colonIndex = -1;
+        for (int i = 0; line[i] != '\0'; i++) {
+            if (line[i] == ':') {
+                colonIndex = i;
+                break;
+            }
+        }
+        if (colonIndex == -1) {
+            continue;
+        }
+
+        line[colonIndex] = '\0';
+        char* key = line;
+        char* value = &line[colonIndex + 1];
+        trimWhitespace(key);
+        trimWhitespace(value);
+
+        if (stringEquals(key, "INITIAL_ENERGY")) {
+            energy = clampInt(atoi(value), 0, MAX_ENERGY);
+        }
+        else if (stringEquals(key, "INITIAL_TIME")) {
+            time = clampInt(atoi(value), 0, 100);
+        }
+        else if (stringEquals(key, "INITIAL_SCORE")) {
+            score = atoi(value);
+        }
+        else if (stringEquals(key, "START_ROOM")) {
+            if (!stringEquals(value, "PLAYER_SELECTS")) {
+                if (value[0] == 'F' && value[2] == '-' && value[3] == 'R') {
+                    playerFloor = value[1] - '1';
+                    playerRoom = value[4] - '1';
+                }
+            }
+        }
+        else if (stringEquals(key, "INITIAL_INVENTORY")) {
+            if (!stringEquals(value, "NONE") && value[0] != '\0') {
+                for (int i = 0; value[i] != '\0' && inventoryCount < MAX_INVENTORY_CAPACITY; i++) {
+                    if (value[i] != ' ' && value[i] != ',') {
+                        inventory[inventoryCount] = value[i];
+                        inventoryCount++;
+                        if (value[i] == ENT_EMERGENCY_CARD) {
+                            emergencyTripsLeft = 3;
+                        }
+                    }
+                }
+            }
+        }
+        else if (stringEquals(key, "CLUES_COLLECTED")) {
+            if (!stringEquals(value, "NONE")) {
+                for (int i = 0; value[i] != '\0'; i++) {
+                    if (value[i] == ENT_CLUE_4) objectives[OBJ_CLUE_4] = true;
+                    else if (value[i] == ENT_CLUE_2) objectives[OBJ_CLUE_2] = true;
+                    else if (value[i] == ENT_CLUE_7) objectives[OBJ_CLUE_7] = true;
+                }
+            }
+        }
+        else if (stringEquals(key, "PASSENGER_RESCUED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_PASSENGER_RESCUED] = true;
+        }
+        else if (stringEquals(key, "CAT_RESCUED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_CAT_SECURED] = true;
+        }
+        else if (stringEquals(key, "CABINET_UNLOCKED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_CABINET_UNLOCKED] = true;
+        }
+        else if (stringEquals(key, "TRAIN_KEY_COLLECTED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_TRAIN_KEY] = true;
+        }
+        else if (stringEquals(key, "FUSE_INSTALLED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_FUSE_INSTALLED] = true;
+        }
+        else if (stringEquals(key, "LIFT_PASS_COLLECTED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_LIFT_PASS] = true;
+        }
+        else if (stringEquals(key, "TRAIN_PREPARED")) {
+            if (stringEquals(value, "YES"))
+                objectives[OBJ_TRAIN_PREPARED] = true;
+        }
+    }
+
+    return true;
+}
+
+bool validateStartingRoom(int startFloor, int startRoom,
+                          const char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1]) {
+    if (startFloor < 0 || startFloor >= NUM_FLOORS ||
+        startRoom < 0 || startRoom >= ROOMS_PER_FLOOR) {
+        return false;
+    }
+
+    if (startRoom > 0) {
+        if (horizontalConn[startFloor][startRoom - 1] != CONN_NONE &&
+            horizontalConn[startFloor][startRoom - 1] != CONN_SOLID_WALL) {
+            return true;
+        }
+    }
+
+    if (startRoom < ROOMS_PER_FLOOR - 1) {
+        if (horizontalConn[startFloor][startRoom] != CONN_NONE &&
+            horizontalConn[startFloor][startRoom] != CONN_SOLID_WALL) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+const char* getEntityName(char entitySymbol) {
     switch (entitySymbol) {
         case ENT_NONE:              return "None";
         case ENT_MASTER_KEY:        return "Master Key";
@@ -26,165 +172,90 @@ const char* getEntityName(char entitySymbol){
         case ENT_OBSERVATION_TOKEN: return "Observation Token";
         default:                    return "Unknown";
     }
-
-
-
-
-    
 }
 
-bool validateStartingRoom(int startFloor, int startRoom, const char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1]){
-
-    if(startFloor < 0 || startFloor >= NUM_FLOORS || startRoom < 0 || startRoom > ROOMS_PER_FLOOR - 1){
-
-        return false;
-    }
-    if(startRoom > 0){
-            if(horizontalConn[startFloor][startRoom - 1] != CONN_NONE && horizontalConn[startFloor][startRoom - 1] != CONN_SOLID_WALL){
-                return true;
+bool loadBuildingMap(
+    const char* filename,
+    char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1],
+    char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],
+    int entityCounts[NUM_FLOORS][ROOMS_PER_FLOOR]
+) {
+    for (int f = 0; f < NUM_FLOORS; f++) {
+        for (int r = 0; r < ROOMS_PER_FLOOR; r++) {
+            entityCounts[f][r] = 0;
+            for (int s = 0; s < MAX_ENTITIES_PER_ROOM; s++) {
+                roomEntities[f][r][s] = ENT_NONE;
+            }
+            if (r < ROOMS_PER_FLOOR - 1) {
+                horizontalConn[f][r] = CONN_NONE;
             }
         }
-    if(startRoom < ROOMS_PER_FLOOR - 1){
-
-        if(horizontalConn[startFloor][startRoom] != CONN_NONE && horizontalConn[startFloor][startRoom] != CONN_SOLID_WALL){
-            return true;
-        }
-
-    }
-    return false;
-
-}
-
-bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom, int& energy, int& time, int& score, char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount, bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft){
-
-    playerFloor = -1;
-    playerRoom = -1;
-    energy = 100;
-    time = 50;
-    score = 0;
-    inventoryCount = 0;
-    emergencyTripsLeft = 0;
-
-    for(int i = 0; i<MAX_INVENTORY_CAPACITY; i++){
-
-        inventory[i] = ENT_NONE;
-
     }
 
-    for(int i = 0; i < NUM_OBJECTIVES; i++){
-        objectives[i] = false;
-
-
-    }
-
-    if(filename == nullptr)
+    if (filename == nullptr) {
         return false;
-    
+    }
+
     ifstream file(filename);
-
-    if(!file.is_open())
+    if (!file.is_open()) {
         return false;
-    
-    char line[256];
+    }
 
-    while(file.getline(line , 256)){
-        int colonIndex = -1;
-        trimWhitespace(line);
-        if(line[0] == '\0') continue;
+    char line[MAX_LINE_LEN];
 
-        for(int i = 0 ; line[i] != '\0' ; i++){
-            if(line[i] == ':'){
-                colonIndex = i;
-                break;
+    while (file.getline(line, MAX_LINE_LEN)) {
+        int detectedFloor = -1;
 
-            }
+        for (int i = 0; line[i] != '\0' && line[i + 1] != '\0' && line[i + 2] != '\0' &&
+                        line[i + 3] != '\0' && line[i + 4] != '\0'; i++) {
+            if (line[i] == 'F' &&
+                line[i + 1] >= '1' && line[i + 1] <= '5' &&
+                line[i + 2] == '-' &&
+                line[i + 3] == 'R' &&
+                line[i + 4] >= '1' && line[i + 4] <= '4') {
 
-        }
-        if(colonIndex == -1){
-            continue;
-        }
-        line[colonIndex] = '\0';
+                detectedFloor = line[i + 1] - '1';
 
-        char* key = line;
-        char* value = &line[colonIndex + 1];
-        trimWhitespace(key);
-        trimWhitespace(value);
+                if (line[i + 4] >= '2' && i >= 2) {
+                    int connIndex = line[i + 4] - '2';
+                    char conn = line[i - 2];
 
-        if(stringEquals(key , "INITIAL_ENERGY")){
-
-           energy = atoi(value); 
-
-        }
-        else if(stringEquals(key , "INITIAL_TIME")){
-
-            time = atoi(value);
-
-        }
-        else if(stringEquals(key , "INITIAL_SCORE")){
-
-            score = atoi(value);
-
-        }
-        else if(stringEquals(key , "START_ROOM")){
-            if(!stringEquals(value , "PLAYER_SELECTS")){
-                if(value[0] == 'F' && value[2] == '-' && value[3] == 'R'){
-                    playerFloor = value[1] - '1';
-                    playerRoom = value[4] - '1';
-                }
-            }
-
-        }
-        else if(stringEquals(key , "INITIAL_INVENTORY")){
-            if(!stringEquals(value , "NONE") && value[0] != '\0'){
-                for(int i = 0; value[i] != '\0' && inventoryCount < MAX_INVENTORY_CAPACITY; i++){
-                    if(value[i] != ' ' && value[i] != ','){
-                        inventory[inventoryCount] = value[i];
-                        inventoryCount++;
+                    
+                    if (conn == CONN_DOOR || conn == CONN_WINDOW ||
+                        conn == CONN_LOCKED_DOOR || conn == CONN_SOLID_WALL) {
+                        horizontalConn[detectedFloor][connIndex] = conn;
+                    } else {
+                        horizontalConn[detectedFloor][connIndex] = CONN_NONE;
                     }
-                        
-                        
                 }
-
-                
             }
-
-        }
-        else if (stringEquals(key, "PASSENGER_RESCUED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_PASSENGER_RESCUED] = true;
-        } 
-        else if (stringEquals(key, "CAT_RESCUED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_CAT_SECURED] = true;
-        } 
-        else if (stringEquals(key, "CABINET_UNLOCKED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_CABINET_UNLOCKED] = true;
-        } 
-        else if (stringEquals(key, "TRAIN_KEY_COLLECTED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_TRAIN_KEY] = true;
-        } 
-        else if (stringEquals(key, "FUSE_INSTALLED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_FUSE_INSTALLED] = true;
-        } 
-        else if (stringEquals(key, "LIFT_PASS_COLLECTED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_LIFT_PASS] = true;
-        }
-        else if (stringEquals(key, "TRAIN_PREPARED")) {
-            if (stringEquals(value, "YES")) 
-            objectives[OBJ_TRAIN_PREPARED] = true;
         }
 
-        
+        if (detectedFloor != -1) {
+            if (file.getline(line, MAX_LINE_LEN)) {
+                int barCount = 0;
 
+                for (int k = 0; line[k] != '\0'; k++) {
+                    if (line[k] == '|') {
+                        barCount++;
+                        continue;
+                    }
+
+                    if (barCount >= 2 && barCount <= 5) {
+                        int r = barCount - 2;
+                        char ch = line[k];
+
+                        if (ch != ' ' && ch != '\r' && ch != '\n') {
+                            if (entityCounts[detectedFloor][r] < MAX_ENTITIES_PER_ROOM) {
+                                roomEntities[detectedFloor][r][entityCounts[detectedFloor][r]] = ch;
+                                entityCounts[detectedFloor][r]++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     return true;
-
-                
 }
-    
-    
