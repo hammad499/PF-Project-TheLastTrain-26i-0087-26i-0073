@@ -34,7 +34,7 @@ bool installFuseControlPanel(char inventory[MAX_INVENTORY_CAPACITY], int& invent
     }
     if(removeItem(inventory , inventoryCount , ENT_FUSE)){
         objectives[OBJ_FUSE_INSTALLED] = true;
-        score = score + SCORE_INSTALL_FUSE;
+        applyScoreDelta(score , SCORE_INSTALL_FUSE);
         if(objectives[OBJ_LIFT_PASS]){
             objectives[OBJ_LIFT2_ACTIVE] = true;
         }

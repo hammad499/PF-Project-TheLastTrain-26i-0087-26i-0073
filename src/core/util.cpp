@@ -5,29 +5,24 @@ using namespace std;
 
 void trimWhitespace(char* str) {
     if (str == nullptr) return;
-    
-    int i = 0;
+
     int start = 0;
-    for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ' && str[i] != '\t' && str[i] != '\n') {
-            start = i;
-            break;
-        }
+    while (str[start] == ' ' || str[start] == '\t' || str[start] == '\r' || str[start] == '\n') {
+        start++;
     }
-    i = 0;
+
+    int i = 0;
     while (str[start + i] != '\0') {
         str[i] = str[start + i];
         i++;
     }
-    str[i] = '\0'; // Seal the new end of the string!
+    str[i] = '\0';
 
-    
     int end = i - 1;
     while (end >= 0 && (str[end] == ' ' || str[end] == '\t' || str[end] == '\r' || str[end] == '\n')) {
         str[end] = '\0';
         end--;
     }
-
 }
 
 int clampInt(int val, int minVal, int maxVal) {
