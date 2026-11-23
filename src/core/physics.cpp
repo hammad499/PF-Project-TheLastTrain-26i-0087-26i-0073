@@ -1,6 +1,6 @@
 #include "physics.h"
 #include "util.h"
-#include <switches.h>
+#include "switches.h"
 
 bool hasItem(const char inventory[MAX_INVENTORY_CAPACITY], int inventoryCount, char itemSymbol){
 
@@ -85,12 +85,7 @@ bool isDirectlyConnected(int fromF, int fromR, int toF, int toR, const char hori
                 return true;
             }
         }
-        if(fromR == 1 || fromR == 2){
-            if(canUseLift1(fromF , toF)){
-                outConnType = '1';
-                return true;
-            }
-        }
+        
 
         if (fromR == 3) {
         bool validFrom = (fromF == 1 || fromF == 3 || fromF == 4);
@@ -104,6 +99,12 @@ bool isDirectlyConnected(int fromF, int fromR, int toF, int toR, const char hori
 
 
     }
+    if((fromR == 1 || fromR == 2) && (toR == 1 || toR == 2)){
+            if(canUseLift1(fromF , toF)){
+                outConnType = '1';
+                return true;
+            }
+        }
 
 return false;
 

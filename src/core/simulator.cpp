@@ -1,9 +1,13 @@
+#include <iostream>
+using namespace std;
 #include "simulator.h"
 #include "physics.h"
 #include "switches.h"
 #include "logger.h"
 #include "viewer_iface.h"
 #include "util.h"
+#include "level.h"
+
 
 bool checkEndConditions(int energy, int time, const bool objectives[NUM_OBJECTIVES]){
     
@@ -74,7 +78,7 @@ bool handleInspectCommand(int currentFloor, int currentRoom,  int& energy, int& 
 
 
 }
-bool handleCollectCommand(char itemSymbol, int currentFloor, int currentRoom,  int& energy, int& time, int& score,  char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],  int& entityCount,  char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount,  bool objectives[NUM_OBJECTIVES]){
+bool handleCollectCommand(char itemSymbol, int currentFloor, int currentRoom,  int& energy, int& time, int& score,  char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],  int& entityCount,  char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount,  bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft){
 
     int denergy = COST_ITEM_PICKUP_ENERGY;
     int dtime = COST_ITEM_PICKUP_TIME;
@@ -171,6 +175,9 @@ bool handleCollectCommand(char itemSymbol, int currentFloor, int currentRoom,  i
             objectives[OBJ_LIFT2_ACTIVE] = true;
         }
     }
+    if(itemSymbol == ENT_EMERGENCY_CARD){
+        emergencyTripsLeft = 3;
+    }
     
 
 
@@ -254,6 +261,142 @@ bool handleUnlockCabinetCommand(const char* code, int currentFloor, int currentR
         }
     }
     return false;
+}
+void runSimulation(int& playerFloor, int& playerRoom, int& energy, int& time, int& score, char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount, bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft, char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1], char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM], int entityCounts[NUM_FLOORS][ROOMS_PER_FLOOR]){
+
+    cout<<"Enter Player Floor (1 to 5)"<<endl;
+    cin>>playerFloor;
+    cout<<"Enter Player Room (1 to 4)"<<endl;
+    cin>>playerRoom;
+
+    while(!(validateStartingRoom(playerFloor-1 , playerRoom-1 , horizontalConn))){
+
+        cout<<"Please enter again.."<<endl;
+        cout<<"Enter Player Floor (1 to 5)"<<endl;
+        cin>>playerFloor;
+        cout<<"Enter Player Room (1 to 4)"<<endl;
+        cin>>playerRoom;
+    }
+    playerFloor = playerFloor - 1;
+    playerRoom = playerRoom - 1;
+
+    while(!checkEndConditions(energy , time , objectives)){
+
+        clearScreen();
+        renderAsciiBuilding(playerFloor , playerRoom);
+        renderDashboard(playerFloor , playerRoom , energy , time , score , inventory , inventoryCount , emergencyTripsLeft);
+        renderRoomDetails(playerFloor , playerRoom , roomEntities , entityCounts[playerFloor][playerRoom] , objectives);
+
+        cout<<"Choose one of the following choices"<<endl;
+        cout<<"1. Move"<<endl;
+        cout<<"2. Inspect"<<endl;
+        cout<<"3. Collect"<<endl;
+        cout<<"4. Use"<<endl;
+        cout<<"5. Unlock Cabinet"<<endl;
+        cout<<"6. Objectives"<<endl;
+        cout<<"7. Save"<<endl;
+        cout<<"8. load"<<endl;
+        cout<<"9. Quit"<<endl;
+        int choice;
+        cin>>choice;
+
+        if(choice == 1){
+            int tf , tr;
+            cout<<"Enter Target Floor and Target Room sperated by space : ";
+            cin>>tf>>tr;
+
+            tf = tf - 1;
+            tr = tr - 1;
+
+            if(handleMoveCommand(tf , tr , playerFloor , playerRoom , energy , time , horizontalConn , inventory , inventoryCount , emergencyTripsLeft ,  objectives[OBJ_LIFT2_ACTIVE])){
+                cout<<endl<<"Moved Successfuly..."<<endl;
+            }
+            else{
+                cout<<"Invalid Move or path blocked!!"<<endl;
+            }
+
+        }
+        else if(choice == 2){
+            if(handleInspectCommand(playerFloor , playerRoom , energy , time , roomEntities , entityCounts[playerFloor][playerRoom] , objectives , score)){
+                cout<<endl<<"Inspected..."<<endl;
+            }
+            else{
+                cout<<"Could not inspect!!"<<endl;
+            }
+        }
+        else if(choice == 3){
+            char sym;
+            cout<<"Enter Item Symbol to collect : ";
+            cin>>sym;
+
+            if(handleCollectCommand(sym , playerFloor , playerRoom , energy , time , score , roomEntities , entityCounts[playerFloor][playerRoom] , inventory , inventoryCount , objectives , emergencyTripsLeft)){
+                cout<<endl<<"Collected..."<<endl;
+            }
+            else{
+                cout<<"Could not collect!!"<<endl;
+            }
+
+
+        }
+        else if(choice == 4){
+            char sym;
+            cout<<"Enter item symbol to use : ";
+            cin>>sym;
+
+            if(handleUseCommand(sym , playerFloor , playerRoom , energy , time , score , inventory , inventoryCount , objectives)){
+                cout<<endl<<"Used..."<<endl;
+            }
+            else{
+                cout<<endl<<"Cannot be used!!"<<endl;
+            }
+        }
+        else if(choice == 5){
+            char code[3];
+            cout<<"Enter 3 digit code : ";
+            cin>>code;
+
+            if(handleUnlockCabinetCommand(code , playerFloor , playerRoom , objectives , score , roomEntities , entityCounts[playerFloor][playerRoom])){
+                cout<<endl<<"Cabinet Unlocked..."<<endl;
+
+            }
+            else{
+                cout<<"Could not unlock cabinet!!"<<endl;
+            }
+
+        }
+        else if(choice == 6){
+            renderObjectivesChecklist(objectives);
+        }
+        else if(choice == 7){
+            saveGameStateToFile("out/savegame.txt" , playerFloor , playerRoom , energy , time , score , inventory , inventoryCount , objectives , emergencyTripsLeft , roomEntities , entityCounts);
+            cout<<endl<<"Game Saved..."<<endl;
+        }
+        else if(choice == 8){
+            if(loadGameStateFromFile("out/savegame.txt", playerFloor , playerRoom , energy , time , score , inventory , inventoryCount , objectives , emergencyTripsLeft , roomEntities , entityCounts)){
+                cout<<endl<<"Game Loaded..."<<endl;
+            }
+            else{
+                cout<<"Error Loading!!"<<endl;
+            }
+        }
+        else if(choice == 9){
+            objectives[OBJ_MISSION_FAILED] = true;
+        }
+
+        
+
+
+    }
+
+    bool victory = objectives[OBJ_MISSION_WON];
+
+    printHeader("Game Summary");
+    cout<<"Energy : "<<energy;
+    cout<<"Time : "<<time;
+    cout<<"Score : "<<score;
+
+    writeGameSummaryReport("out/game_summary.txt" , score , energy , time , objectives , victory);
+
 
 
 }

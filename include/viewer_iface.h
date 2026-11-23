@@ -10,7 +10,7 @@ void renderDashboard(int playerFloor, int playerRoom, int energy, int time, int 
 
 void renderRoomDetails(int floor, int room,
                        const char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],
-                       int entityCount);
+                       int entityCount, const bool objectives[NUM_OBJECTIVES]);
 
 void renderAsciiBuilding(int playerFloor, int playerRoom);
 void renderObjectivesChecklist(const bool objectives[NUM_OBJECTIVES]);

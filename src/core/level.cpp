@@ -34,12 +34,12 @@ bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom,
 
     char line[MAX_LINE_LEN];
 
-    while (file.getline(line, MAX_LINE_LEN)) {
+    while (file.getline(line, MAX_LINE_LEN)){
         trimWhitespace(line);
         if (line[0] == '\0') continue;
 
         int colonIndex = -1;
-        for (int i = 0; line[i] != '\0'; i++) {
+        for (int i = 0; line[i] != '\0'; i++){
             if (line[i] == ':') {
                 colonIndex = i;
                 break;
@@ -55,20 +55,24 @@ bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom,
         trimWhitespace(key);
         trimWhitespace(value);
 
-        if (stringEquals(key, "INITIAL_ENERGY")) {
+        if (stringEquals(key, "INITIAL_ENERGY")){
             energy = clampInt(atoi(value), 0, MAX_ENERGY);
         }
-        else if (stringEquals(key, "INITIAL_TIME")) {
-            time = clampInt(atoi(value), 0, 100);
+        else if (stringEquals(key, "INITIAL_TIME")){
+            time = clampInt(atoi(value), 0, MAX_TIME);
         }
-        else if (stringEquals(key, "INITIAL_SCORE")) {
+        else if (stringEquals(key, "INITIAL_SCORE")){
+            if(atoi(value) >= 0){
             score = atoi(value);
+            }
         }
         else if (stringEquals(key, "START_ROOM")) {
-            if (!stringEquals(value, "PLAYER_SELECTS")) {
-                if (value[0] == 'F' && value[2] == '-' && value[3] == 'R') {
+            if (!stringEquals(value, "PLAYER_SELECTS")){
+                if (value[0] == 'F' && value[2] == '-' && value[3] == 'R'){
+                    if(value[1] >= '1' && value[1] <= '5' && value[4] >= '1' && value[4] <= '4'){
                     playerFloor = value[1] - '1';
                     playerRoom = value[4] - '1';
+                    }
                 }
             }
         }
@@ -179,7 +183,7 @@ bool loadBuildingMap(
     char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1],
     char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],
     int entityCounts[NUM_FLOORS][ROOMS_PER_FLOOR]
-) {
+){
     for (int f = 0; f < NUM_FLOORS; f++) {
         for (int r = 0; r < ROOMS_PER_FLOOR; r++) {
             entityCounts[f][r] = 0;

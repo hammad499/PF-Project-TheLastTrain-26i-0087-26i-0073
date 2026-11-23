@@ -1,10 +1,10 @@
 #include "switches.h"
 #include "util.h"
-#include <physics.h>
+#include "physics.h"
 
 bool canUseLift1(int fromFloor, int toFloor){
 
-    if((fromFloor == 0 || fromFloor == 1) && (toFloor == 0 || toFloor == 1) && (fromFloor != toFloor)){
+    if((fromFloor == 0 || fromFloor == 1) && (toFloor == 0 || toFloor == 1) ){
         return true;
     }
     return false;
