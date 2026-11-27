@@ -2,7 +2,7 @@
 
 **CS-1002: Programming Fundamentals (AI & DS) – Semester Project**
 Authors: `Hammad` (`26i-0087`) [, `Abdullah Ajaz` (`26i-0073`)]
-Release tag: `v1.0.<RollNo>`
+Release tag: `v1.0.26i-0087`
 
 A deterministic, text-based rescue game written in C++17 (procedural style, no classes). The player explores a 5-floor, 20-room building, rescues an injured passenger and a cat, finds three clue digits to open a cabinet containing the Train Key, restores Lift 2, and boards the train at F5-R2 before Energy or Time reaches 0.
 
