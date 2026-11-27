@@ -55,6 +55,10 @@ bool saveGameStateToFile(const char* filename, int playerFloor, int playerRoom, 
 }
 bool loadGameStateFromFile(const char* filename,   int& playerFloor, int& playerRoom,   int& energy, int& time, int& score,   char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount,   bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft,   char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],   int entityCounts[NUM_FLOORS][ROOMS_PER_FLOOR]){
 
+    ifstream file(filename);
+    if (!file.is_open())
+        return false;
+
     playerFloor = -1;
     playerRoom = -1;
     energy = INITIAL_ENERGY;
@@ -83,9 +87,7 @@ bool loadGameStateFromFile(const char* filename,   int& playerFloor, int& player
     if (filename == nullptr)
         return false;
 
-    ifstream file(filename);
-    if (!file.is_open())
-        return false;
+    
 
     char line[MAX_LINE_LEN];
 

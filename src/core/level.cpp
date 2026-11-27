@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
+ 
 using namespace std;
 
 bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom,
@@ -128,6 +129,9 @@ bool loadInitialState(const char* filename, int& playerFloor, int& playerRoom,
         }
     }
 
+
+    file.close();
+
     return true;
 }
 
@@ -210,6 +214,10 @@ bool loadBuildingMap(
     while (file.getline(line, MAX_LINE_LEN)) {
         int detectedFloor = -1;
 
+        if (line[0] == 'D' && line[1] == ' ' && line[2] == '=' && line[3] == ' ') {
+            break;
+        }
+
         for (int i = 0; line[i] != '\0' && line[i + 1] != '\0' && line[i + 2] != '\0' &&
                         line[i + 3] != '\0' && line[i + 4] != '\0'; i++) {
             if (line[i] == 'F' &&
@@ -235,7 +243,7 @@ bool loadBuildingMap(
             }
         }
 
-        if (detectedFloor != -1) {
+        if (detectedFloor != -1 && detectedFloor != 3) {
             if (file.getline(line, MAX_LINE_LEN)) {
                 int barCount = 0;
 
@@ -259,7 +267,33 @@ bool loadBuildingMap(
                 }
             }
         }
+        if (detectedFloor == 3) {
+            if (file.getline(line, MAX_LINE_LEN)) {
+                int barCount = 0;
+
+                for (int k = 0; line[k] != '\0'; k++) {
+                    if (line[k] == '|') {
+                        barCount++;
+                        continue;
+                    }
+
+                    if (barCount >= 1 && barCount <= 4) {
+                        int r = barCount - 1;
+                        char ch = line[k];
+
+                        if (ch != ' ' && ch != '\r' && ch != '\n') {
+                            if (entityCounts[detectedFloor][r] < MAX_ENTITIES_PER_ROOM) {
+                                roomEntities[detectedFloor][r][entityCounts[detectedFloor][r]] = ch;
+                                entityCounts[detectedFloor][r]++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+    file.close();
 
     return true;
 }

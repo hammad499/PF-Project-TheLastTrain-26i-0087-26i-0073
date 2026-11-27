@@ -2,6 +2,7 @@
 #include "util.h"
 #include <iostream>
 #include "level.h"
+#include <fstream>
 
 using namespace std;
 
@@ -76,25 +77,57 @@ void renderObjectivesChecklist(const bool objectives[NUM_OBJECTIVES]) {
 
     cout << "Completed: " << completed << " / " << NUM_OBJECTIVES << endl;
 }
-void renderAsciiBuilding(int playerFloor, int playerRoom){
-
+void renderAsciiBuilding(int playerFloor, int playerRoom) {
     printHeader("Building Map");
-    for(int i = NUM_FLOORS - 1; i >= 0; i--){
 
-        cout<<"F" << (i + 1) << " | ";
-        for (int j = 0; j < ROOMS_PER_FLOOR; j++){
-            if(i == playerFloor && j == playerRoom){
-                cout<<" [ P ] ";
-            }
-            else{
-               cout<<" [R " << (j + 1) << " ] ";
+    ifstream file("data/building.txt");
+    if (!file.is_open()) {
+        cout << "Error: Could not open data/building.txt" << endl;
+        return;
+    }
+
+    char line[MAX_LINE_LEN];
+
+    while (file.getline(line, MAX_LINE_LEN)) {
+        
+        if (line[0] == 'D' && line[1] == ' ' && line[2] == '=' && line[3] == ' ') {
+            break;
+        }
+
+        
+        bool isHeaderLine = false;
+        for (int i = 0; line[i] != '\0' && line[i + 1] != '\0' && line[i + 2] != '\0'; i++) {
+            if (line[i] == 'F' && line[i + 1] >= '1' && line[i + 1] <= '5' && line[i + 2] == '-') {
+                isHeaderLine = true;
+                break;
             }
         }
-        cout<<endl;
 
-
+        if (isHeaderLine) {
+            cout << line << endl;
+        } else {
+           
+            for (int k = 0; line[k] != '\0'; k++) {
+                char ch = line[k];
+                if (ch == ENT_MASTER_KEY || ch == ENT_ENERGY_PACK ||
+                    ch == ENT_EMERGENCY_TOOLKIT || ch == ENT_CLUE_4 ||
+                    ch == ENT_FUSE || ch == ENT_CAT ||
+                    ch == ENT_CONTROL_PANEL || ch == ENT_LIFT_PASS ||
+                    ch == ENT_PASSENGER || ch == ENT_MEDICAL_KIT ||
+                    ch == ENT_EMERGENCY_CARD || ch == ENT_CLUE_2 ||
+                    ch == ENT_CLUE_7 || ch == ENT_CABINET_TRAIN_KEY ||
+                    ch == ENT_CAT_CARRIER || ch == ENT_OBSERVATION_TOKEN) {
+                    cout << ' ';
+                } else {
+                    cout << ch;
+                }
+            }
+            cout << endl;
+        }
     }
-    cout<<endl;
-    cout<<"Stairs/Lifts: S1 (F1-R1 to F2-R1), L1 (F1-R2 or F1-R3 to F2-R2 or F2-R3), S2 (F2-R1 to F3-R1), L2 (F2-R4 to F5-R4), S3 (F4-R1 and F5-R1)";
-    cout<<endl;
+
+    file.close();
+    cout << endl;
+    cout<<"D = Ordinary door\nW = Window\nL = Locked door (requires Master Key)\n# = Solid wall\nS1 = Staircase connecting F1-R1 and F2-R1\nS2 = Staircase connecting F2-R1 and F3-R1\nS3 = Staircase connecting F4-R1 and F5-R1\nL1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3\nLIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4"<<endl;
+    cout << "Current Location: F" << (playerFloor + 1) << "-R" << (playerRoom + 1) << endl;
 }

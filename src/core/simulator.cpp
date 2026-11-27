@@ -7,6 +7,8 @@ using namespace std;
 #include "viewer_iface.h"
 #include "util.h"
 #include "level.h"
+#include <iomanip>   
+#include <limits> 
 
 
 bool checkEndConditions(int energy, int time, const bool objectives[NUM_OBJECTIVES]){
@@ -227,25 +229,29 @@ bool handleUseCommand(char itemSymbol, int currentFloor, int currentRoom,  int& 
     }
     if(itemSymbol == ENT_CABINET_TRAIN_KEY && !objectives[OBJ_TRAIN_PREPARED] && objectives[OBJ_PASSENGER_RESCUED] && objectives[OBJ_CAT_SECURED] && objectives[OBJ_FUSE_INSTALLED]){
         if(currentFloor == 4 && currentRoom == 1){
-            objectives[OBJ_TRAIN_PREPARED] = true;
-            objectives[OBJ_MISSION_WON] = true;
             applyResourceDelta(energy , time , denergy , dtime);
             removeItem(inventory , inventoryCount , itemSymbol);
             applyScoreDelta(score , SCORE_PREPARE_TRAIN);
             applyScoreDelta(score , SCORE_MISSION_VICTORY);
+            objectives[OBJ_TRAIN_PREPARED] = true;
+            objectives[OBJ_MISSION_WON] = true;
             return true;
         }
     }
 
     return false;
 }
-bool handleUnlockCabinetCommand(const char* code, int currentFloor, int currentRoom,    bool objectives[NUM_OBJECTIVES], int& score,    char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],    int& entityCount){
+
+bool handleUnlockCabinetCommand(const char* code, int currentFloor, int currentRoom,    bool objectives[NUM_OBJECTIVES], int& score,    char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM],    int& entityCount , int& energy , int& time){
 
     bool found = false;
     if(currentFloor == 4 && currentRoom == 0 && objectives[OBJ_CLUE_4] && objectives[OBJ_CLUE_2] && objectives[OBJ_CLUE_7] && !objectives[OBJ_CABINET_UNLOCKED]){
         if(stringEquals(code , "427")){
             objectives[OBJ_CABINET_UNLOCKED] = true;
             applyScoreDelta(score , SCORE_CABINET_UNLOCK);
+            int denergy = COST_ITEM_USE_ENERGY;
+            int dtime = COST_ITEM_USE_TIME;
+            applyResourceDelta(energy , time , denergy , dtime);
             for(int i = 0; i<entityCount; i++){
                 if(roomEntities[currentFloor][currentRoom][i] == ENT_CABINET_TRAIN_KEY){
                     found = true;
@@ -262,6 +268,7 @@ bool handleUnlockCabinetCommand(const char* code, int currentFloor, int currentR
     }
     return false;
 }
+
 void runSimulation(int& playerFloor, int& playerRoom, int& energy, int& time, int& score, char inventory[MAX_INVENTORY_CAPACITY], int& inventoryCount, bool objectives[NUM_OBJECTIVES], int& emergencyTripsLeft, char horizontalConn[NUM_FLOORS][ROOMS_PER_FLOOR - 1], char roomEntities[NUM_FLOORS][ROOMS_PER_FLOOR][MAX_ENTITIES_PER_ROOM], int entityCounts[NUM_FLOORS][ROOMS_PER_FLOOR]){
 
     cout<<"Enter Player Floor (1 to 5)"<<endl;
@@ -351,11 +358,15 @@ void runSimulation(int& playerFloor, int& playerRoom, int& energy, int& time, in
             }
         }
         else if(choice == 5){
-            char code[3];
-            cout<<"Enter 3 digit code : ";
-            cin>>code;
+            char code[4];
+            cout << "Enter 3-digit cabinet code: ";
 
-            if(handleUnlockCabinetCommand(code , playerFloor , playerRoom , objectives , score , roomEntities , entityCounts[playerFloor][playerRoom])){
+            cin>>code;
+                        
+           
+        
+
+            if(handleUnlockCabinetCommand(code , playerFloor , playerRoom , objectives , score , roomEntities , entityCounts[playerFloor][playerRoom]  , energy , time)){
                 cout<<endl<<"Cabinet Unlocked..."<<endl;
 
             }

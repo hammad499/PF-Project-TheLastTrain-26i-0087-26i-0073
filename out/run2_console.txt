@@ -1,0 +1,3146 @@
+===========================================
+ THE LAST TRAIN - SIMULATION INITIALIZED   
+===========================================
+Enter Player Floor (1 to 5)
+Enter Player Room (1 to 4)
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 100 || Time : 50 || Score : 0
+
+========================================
+Inventory Information
+========================================
+Inventory : NONE
+
+
+========================================
+Room Details
+========================================
+Current Room: F4-R2
+Entities in Room:
+  [%] Medical Kit
+  [$] Emergency Access Card
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 99 || Time : 49 || Score : 0
+
+========================================
+Inventory Information
+========================================
+Inventory : Medical Kit : % || 
+
+
+========================================
+Room Details
+========================================
+Current Room: F4-R2
+Entities in Room:
+  [$] Emergency Access Card
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 98 || Time : 48 || Score : 0
+
+========================================
+Inventory Information
+========================================
+Inventory : Medical Kit : % || Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F4-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 95 || Time : 46 || Score : 0
+
+========================================
+Inventory Information
+========================================
+Inventory : Medical Kit : % || Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F4-R1
+Entities in Room:
+  [!] Passenger
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter item symbol to use : 
+Used...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 94 || Time : 45 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F4-R1
+Entities in Room:
+  [!] Passenger
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 92 || Time : 44 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R1
+Entities in Room:
+  [7] Clue Digit 7
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 90 || Time : 43 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 88 || Time : 42 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R3
+Entities in Room:
+  [@] Cat Carrier
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 87 || Time : 41 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R3
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 84 || Time : 39 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R4
+Entities in Room:
+  [&] Observation Token
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 83 || Time : 53 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 3
+
+========================================
+Room Details
+========================================
+Current Room: F5-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 79 || Time : 50 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 77 || Time : 49 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R3
+Entities in Room:
+  [\] Emergency Toolkit
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F1-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 1 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 73 || Time : 46 || Score : 100
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F1-R2
+Entities in Room:
+  [<] Master Key
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F1-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 1 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 72 || Time : 45 || Score : 110
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F1-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F1-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 1 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 69 || Time : 43 || Score : 110
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F1-R1
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 67 || Time : 42 || Score : 110
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R1
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 65 || Time : 41 || Score : 110
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R1
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 63 || Time : 40 || Score : 110
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R2
+Entities in Room:
+  [4] Clue Digit 4
+  [*] Fuse
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+
+Inspected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 62 || Time : 39 || Score : 120
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R2
+Entities in Room:
+  [4] Clue Digit 4
+  [*] Fuse
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 61 || Time : 38 || Score : 120
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Fuse : * || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R2
+Entities in Room:
+  [4] Clue Digit 4
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 58 || Time : 36 || Score : 120
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Fuse : * || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R3
+Entities in Room:
+  [~] Cat
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 56 || Time : 35 || Score : 120
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Fuse : * || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R4
+Entities in Room:
+  [;] Control Panel
+  [(] Lift Pass
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 55 || Time : 34 || Score : 140
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Fuse : * || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R4
+Entities in Room:
+  [;] Control Panel
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter item symbol to use : 
+Used...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 54 || Time : 33 || Score : 160
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R4
+Entities in Room:
+  [;] Control Panel
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 52 || Time : 32 || Score : 160
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R3
+Entities in Room:
+  [~] Cat
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter item symbol to use : 
+Used...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 51 || Time : 31 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R3
+Entities in Room:
+  [~] Cat
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 48 || Time : 29 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R2
+Entities in Room:
+  [4] Clue Digit 4
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F3-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 3 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 46 || Time : 28 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F3-R1
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 44 || Time : 27 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R1
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 42 || Time : 26 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 38 || Time : 23 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R3
+Entities in Room:
+  [\] Emergency Toolkit
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F2-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 2 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 36 || Time : 22 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F2-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 32 || Time : 19 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F4-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 30 || Time : 18 || Score : 260
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F4-R3
+Entities in Room:
+  [2] Clue Digit 2
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+
+Inspected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 29 || Time : 17 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F4-R3
+Entities in Room:
+  [2] Clue Digit 2
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F4-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 4 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 27 || Time : 16 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F4-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R4
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 4
+
+========================================
+Player Vitals
+========================================
+Energy : 23 || Time : 13 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R4
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R3
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 3
+
+========================================
+Player Vitals
+========================================
+Energy : 20 || Time : 11 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R3
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 18 || Time : 10 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 16 || Time : 9 || Score : 270
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R1
+Entities in Room:
+  [7] Clue Digit 7
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+
+Inspected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 15 || Time : 8 || Score : 280
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R1
+Entities in Room:
+  [7] Clue Digit 7
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter 3-digit cabinet code: 
+Cabinet Unlocked...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 14 || Time : 7 || Score : 310
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R1
+Entities in Room:
+  [7] Clue Digit 7
+  [^] Cabinet / Train Key
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Item Symbol to collect : 
+Collected...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R1
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 1
+
+========================================
+Player Vitals
+========================================
+Energy : 13 || Time : 6 || Score : 320
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || Cabinet / Train Key : ^ || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R1
+Entities in Room:
+  [7] Clue Digit 7
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter Target Floor and Target Room sperated by space : 
+Moved Successfuly...
+
+----------------------------------------------------------
+
+========================================
+Building Map
+========================================
+GAME: THE LAST TRAIN                                                    
+        +-----------+-----------+-----------+-----------+          L 
+     |  | F5-R1     D F5-R2     D F5-R3     W F5-R4     |          |
+     |  |           |           |           |           |          |
+S3---|  +-----------+-----------+-----------+-----------+          |
+     |  | F4-R1     W F4-R2     # F4-R3     D F4-R4     |          L2
+        |           |           |           |           |          .
+        +-----------+-----------+-----------+-----------+          .
+     |  | F3-R1     L F3-R2     W F3-R3     D F3-R4     |          .
+     |  |           |           |           |           |          .
+S ---|  +-----------+-----------+-----------+-----------+          .
+     |  | F2-R1     D F2-R2    L1 F2-R3     D F2-R4     |==========L2
+     |  |           |           |           |           |          
+S1---|  +-----------+-----------+-----------+-----------+          
+     |  | F1-R1     W F1-R2    L1 F1-R3     D F1-R4     |          
+     |  |           |           |           |           |         
+     |  +-----------+-----------+-----------+-----------+        
+
+
+D = Ordinary door
+W = Window
+L = Locked door (requires Master Key)
+# = Solid wall
+S1 = Staircase connecting F1-R1 and F2-R1
+S2 = Staircase connecting F2-R1 and F3-R1
+S3 = Staircase connecting F4-R1 and F5-R1
+L1 = Lift F1-R2 to F2-R2 and F1-R3 to F2-R3
+LIFT 2 = Lift 2 F2-R4 to F4-R4 and F5-R4
+Current Location: F5-R2
+
+========================================
+Player Position
+========================================
+PLayer Floor : 5 || PLayer Room : 2
+
+========================================
+Player Vitals
+========================================
+Energy : 11 || Time : 5 || Score : 320
+
+========================================
+Inventory Information
+========================================
+Inventory : Emergency Access Card : $ || Cat Carrier : @ || Master Key : < || Lift Pass : ( || Cabinet / Train Key : ^ || 
+Emergency Trips Left : 2
+
+========================================
+Room Details
+========================================
+Current Room: F5-R2
+Entities in Room: None
+Choose one of the following choices
+1. Move
+2. Inspect
+3. Collect
+4. Use
+5. Unlock Cabinet
+6. Objectives
+7. Save
+8. load
+9. Quit
+Enter item symbol to use : 
+Used...
+
+========================================
+Game Summary
+========================================
+Energy : 10Time : 4Score : 520
