@@ -7,8 +7,7 @@ using namespace std;
 #include "viewer_iface.h"
 #include "util.h"
 #include "level.h"
-#include <iomanip>   
-#include <limits> 
+
 
 
 bool checkEndConditions(int energy, int time, const bool objectives[NUM_OBJECTIVES]){
@@ -393,6 +392,7 @@ void runSimulation(int& playerFloor, int& playerRoom, int& energy, int& time, in
         else if(choice == 9){
             objectives[OBJ_MISSION_FAILED] = true;
         }
+        
 
         
 
@@ -403,8 +403,8 @@ void runSimulation(int& playerFloor, int& playerRoom, int& energy, int& time, in
 
     printHeader("Game Summary");
     cout<<"Energy : "<<energy;
-    cout<<"Time : "<<time;
-    cout<<"Score : "<<score;
+    cout<<" Time : "<<time;
+    cout<<" Score : "<<score;
 
     writeGameSummaryReport("out/game_summary.txt" , score , energy , time , objectives , victory);
 

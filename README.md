@@ -1,7 +1,7 @@
 # The Last Train
 
 **CS-1002: Programming Fundamentals (AI & DS) – Semester Project**
-Authors: `Hammad` (`26i-0087`) [, `Abdullah Ajaz` (`26i-0073`)]
+Authors: Hammad (`26i-0087`), Abdullah Ajaz (`26i-0073`)
 Release tag: `v1.0.26i-0087`
 
 A deterministic, text-based rescue game written in C++17 (procedural style, no classes). The player explores a 5-floor, 20-room building, rescues an injured passenger and a cat, finds three clue digits to open a cabinet containing the Train Key, restores Lift 2, and boards the train at F5-R2 before Energy or Time reaches 0.
@@ -11,11 +11,13 @@ A deterministic, text-based rescue game written in C++17 (procedural style, no c
 ## Project structure
 
 ```
-include/   Header files: config, state, level, simulator, physics, switches, logger, util, viewer_iface
-src/core/  Implementation: main_core, level, simulator, physics, switches, logger, util, viewer_iface_core
-data/      building.txt (static map), initial-state.txt (start values), test input files
-out/       savegame.txt and game_summary.txt (written at runtime; a completed sample run is committed)
-docs/      Project_Diagram.jpg, Flowchart.png, ConsoleUI.png
+include/        Header files: config, state, level, simulator, physics, switches, logger, util, viewer_iface
+src/core/       Implementation: main_core, level, simulator, physics, switches, logger, util, viewer_iface_core
+data/           building.txt (static map), initial-state.txt (start values), test inputs and expected summaries
+out/            savegame.txt and game_summary.txt (written at runtime; a completed sample run is committed)
+docs/           Project_Diagram.jpg, Flowchart.png, ConsoleUI.png, TESTS.md, test_win_walkthrough.md
+run_tests.bat   Runs the whole test suite on Windows
+run_tests.sh    Runs the whole test suite on Linux / macOS / Git Bash
 ```
 
 | File | Role |
@@ -80,19 +82,38 @@ The game ends on victory, when Energy or Time reaches 0, or when you quit. A sum
 
 ---
 
-## Verifying deterministic output
+## Testing and deterministic output
 
-The game has no randomness. The same start room and the same command sequence always produce the same resource values, states and summary.
+The game has no randomness. The same start room and the same command sequence always produce the same resource values, game states and summary.
 
-Test inputs are plain text files of the numbers you would type, one entry per line, **ending with `9` (Quit)** so the program exits. Place them in `data/`.
+A test is a plain text file of the keys a player would type (start floor, start room, then menu choices), ending with `9` (Quit). Test inputs and their expected summaries are in `data/`.
+
+### Run the whole suite
+
+Build the game first, then from the project root:
+
+```bash
+run_tests.bat          # Windows
+./run_tests.sh         # Linux / macOS / Git Bash
+```
+
+Each test is run **twice**. It passes when:
+
+1. the two console outputs are identical,
+2. the two `game_summary.txt` files are identical, and
+3. the summary matches `data/expected_<test>.txt`.
+
+The last line shows the totals (`Passed: 14   Failed: 0`). Run outputs are kept in `out/test_runs/`. See `docs/TESTS.md` for details and troubleshooting.
+
+### Run one test by hand
 
 ```bash
 # Run 1
-./last_train < data/<test_file>.txt > out/run1_console.txt
+./last_train < data/test_win.txt > out/run1_console.txt
 cp out/game_summary.txt out/run1_summary.txt
 
 # Run 2 (identical input)
-./last_train < data/<test_file>.txt > out/run2_console.txt
+./last_train < data/test_win.txt > out/run2_console.txt
 cp out/game_summary.txt out/run2_summary.txt
 
 # Compare – no output means identical
@@ -100,13 +121,28 @@ diff out/run1_console.txt out/run2_console.txt
 diff out/run1_summary.txt out/run2_summary.txt
 ```
 
-On Windows (Command Prompt) use `fc` instead of `diff`, and `type` / `copy` in place of `cat` / `cp`.
+On Windows (Command Prompt) use `last_train.exe`, `copy` and `fc` in place of `./last_train`, `cp` and `diff`, and backslashes in paths.
 
 ### Included tests
 
-| File | What it checks |
-|---|---|
-| `data/test_win.txt` | Full victory route from F4-R2 (rescues passenger and cat, installs fuse, unlocks cabinet `427`, boards train; Score: 520, Energy: 10, Time: 4; see `docs/test_win_walkthrough.md` and `data/expected_win_summary.txt`) |
+| Test | Input file | What it checks | Expected result |
+|---|---|---|---|
+| win | `data/test_win.txt` | Full victory route from F4-R2: rescues passenger and cat, installs fuse, unlocks cabinet `427`, boards train (step-by-step table in `docs/test_win_walkthrough.md`) | Win, Energy 10, Time 4, Score 520 |
+| loss_energy | `data/test_loss_energy.txt` | Mission fails the moment Energy reaches 0 | Defeat, Energy 0, Time 14 |
+| loss_time | `data/test_loss_time.txt` | Mission fails the moment Time reaches 0 | Defeat, Energy 25, Time 0 |
+| locked_door | `data/test_locked_door.txt` | Locked door rejected without the Master Key at no cost, then works with it | Energy 81, Time 39, Score 10 |
+| wall | `data/test_wall.txt` | Wall between F4-R2 and F4-R3 is impassable; rejections cost nothing | Energy 94, Time 46 |
+| lift1 | `data/test_lift1.txt` | Lift 1 trips between R2/R3, across floors and on the same floor, each −4/−3 | Energy 84, Time 38 |
+| lift2_emergency | `data/test_lift2_emergency.txt` | Lift 2 rejected with no card; the Emergency Card gives exactly 3 trips; the 4th is rejected | Energy 63, Time 26 |
+| lift2_normal | `data/test_lift2_normal.txt` | After Fuse installed and Lift Pass collected, Lift 2 works 5 times with no card | Energy 45, Time 13, Score 50 |
+| cabinet | `data/test_cabinet.txt` | Wrong code and early key pickup rejected for free; code `427` costs −1/−1 and gives +30; a second unlock is rejected | Energy 13, Time 6, Score 320 |
+| cabinet_no_clues | `data/test_cabinet_no_clues.txt` | Cabinet stays locked until all clue digits are found | Energy 99, Time 49, Score 10 |
+| no_rescue_passenger | `data/test_no_rescue_passenger.txt` | Passenger cannot be rescued without the Medical Kit | Energy 100, Time 50, Score 0 |
+| no_rescue_cat | `data/test_no_rescue_cat.txt` | Cat cannot be secured without the Cat Carrier | Energy 100, Time 50, Score 0 |
+| caps | `data/test_caps.txt` | Energy Packs and Emergency Toolkit clamp Energy at 100; only two packs exist | Energy 100, Time 41 |
+| resume | `data/test_resume_part1.txt`, `data/test_resume_part2.txt` | Save mid-game, reload in a new run, and finish; result identical to the uninterrupted win | Win, Energy 10, Time 4, Score 520 |
+
+Tests that do not end in a win finish with Quit (menu 9), so their summary says "defeated"; the Energy, Time and Score values are what each test checks.
 
 ---
 
